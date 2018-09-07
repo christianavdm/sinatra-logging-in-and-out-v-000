@@ -1,6 +1,6 @@
 require 'pry'
 class Helpers
-  def self.current_user(params)
+  def self.current_user
     @user = User.find_by(id: session[:user_id])
   end
 
